@@ -127,7 +127,7 @@ h1 em, h2 em { color: #9fa5a4; font-style: normal; }
   align-items: center;
 }
 .hero-copy { grid-area: copy; align-self: end; max-width: 620px; }
-.hero-copy h1 { margin: 28px 0; }
+.hero-copy h1 { margin: 28px 0; overflow-wrap: normal; word-break: normal; }
 .hero-copy > p { max-width: 535px; margin: 0; color: #b2b8b7; font-size: 17px; line-height: 1.7; }
 .hero-actions { margin-top: 36px; display: flex; align-items: center; gap: 30px; }
 .hero-product { grid-area: media; position: relative; align-self: center; width: 100%; min-height: 0; aspect-ratio: 1; margin: 0; overflow: hidden; background: #d3d0cc; }
@@ -220,7 +220,7 @@ h1 em, h2 em { color: #9fa5a4; font-style: normal; }
 .feature-list strong { font-size: 12px; letter-spacing: .045em; text-transform: uppercase; }
 .feature-list small { margin-top: 5px; color: #626968; font-size: 12px; line-height: 1.5; }
 .engineering-art { margin: 0; background: #06101a; }
-.engineering-art img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; }
+.engineering-art img { display: block; width: 100%; height: auto; object-fit: contain; }
 .engineering-art figcaption { padding: 17px 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; border-top: 1px solid rgba(255,255,255,.18); color: #e4e7e6; }
 .engineering-art figcaption span { font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
 .engineering-art figcaption small { color: #9da3a2; font-size: 10px; line-height: 1.5; }
@@ -362,7 +362,7 @@ input:focus, select:focus { border-color: #e0e3e2; }
   .nav-cta { min-height: 38px; padding: 0 12px; font-size: 0; }
   .nav-cta::before { content: "Заявка"; font-size: 9px; }
   .nav-cta span { margin-left: 7px; font-size: 12px; }
-  h1 { font-size: clamp(38px, 11vw, 46px); }
+  h1 { font-size: clamp(32px, 10vw, 46px); }
   h2 { font-size: 34px; }
   .hero { padding-top: 105px; gap: 34px; }
   .hero-copy > p { font-size: 15px; line-height: 1.65; }
